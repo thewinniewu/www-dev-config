@@ -50,6 +50,8 @@ export HISTCONTROL=ignoreboth
 # After each command, update LINES and COLUMNS to reflect the current window size
 shopt -s checkwinsize
 
+source git-prompt.sh
+
 export PS1="\[${COLOR_LIGHT_GRAY}\]\w\[${COLOR_NC}\]\[${COLOR_LIGHT_CYAN}\]\$(__git_ps1 \" %s\")\[${COLOR_NC}\] "
 export PS2='> '
 export PS3='#? '
